@@ -1,0 +1,75 @@
+.container {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  margin: 20x auto;
+  width: 60%;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.question h2 {
+  margin-bottom: 10px;
+}
+
+.options {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.options>li>button {
+  margin-bottom: 10px;
+  width: 80%;
+  background-color: rgb(197, 196, 196);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.options>li>button:hover {
+  background-color: rgb(152, 152, 152);
+}
+
+.results {
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.results ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.results span {
+  color: skyblue;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.results li {
+  margin-bottom: 10px;
+}
+
+.results li[data-correct="true"] {
+  color: green;
+}
+.results li[data-correct="false"] {
+  color: red;
+}
